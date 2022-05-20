@@ -7,7 +7,7 @@ The aim of this problem is to navigate a squads of rovers landed on Mars. The in
 
 **The approach**
 
-The basic ideas are:
+The approach ideas are:
 
 **1-** If you want to ask the rover to commit a rotation with an angle of 90 degrees, it means that the rover will move to the next cardinal compass direction. The nixt cardinal compass direction will depend on the type of rotation clockwise or anti-clockwise. For example: if the rover is pointing to the north, a one right rotation will make it point to east while a one left rotation will make it point to west. 
                  
