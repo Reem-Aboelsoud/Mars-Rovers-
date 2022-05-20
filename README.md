@@ -18,7 +18,7 @@ The basic ideas are:
 
 **4-** And, a move forward with no change in the direction will will add or subtract ONE from the currevt X or Y values. For example, if the current position is X= 3, Y=1, and the rover points to N and the instruction is only "M" to move forward. Then, as N is refering th the positive_X axis, a one should be added to the X value and the final position will be: X=4, Y=1, and direction same to the north.
 
-**5-** As givin in the problem, the rover's lower left corner is (0,0), so the rover is "hypothatically" moving in its the cartisian first quarter of this 2_D plane. Look at the image. 
+**5-** As givin in the problem, the rover's lower left corner is (0,0), so the rover is "hypothatically" moving in its the cartisian first quarter of this 2_D plane. All in all, all the values of the input and output of both X and Y values should be positive values. Look at the image. 
 
  
 
