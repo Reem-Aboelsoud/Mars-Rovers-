@@ -162,7 +162,8 @@ def main():
             break
         except AssertionError:
             print("Only positive integer co ordinates accepted for the upper right corner of the Plateau. Please try again!")
-            
+    #Note about the upper right corner: I was not sure if the upper right corner should be given as an input with every time you give instructions to a rover. 
+    #Or it should be givin only one time at the start of the mission. However, I chose here to make it given everytime the instructions are given, just to be in the safe side.
     
     while True: 
         try:
