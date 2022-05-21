@@ -185,7 +185,7 @@ def main():
         except Exception as ex:
             print(ex)
             
-    #Not about the number of rovers: I was thinking to creat a function to ask the user/scientist to add the rover's ID, 
+    #Note about the number of rovers: I was thinking to creat a function to ask the user/scientist to add the rover's ID, 
     #as they are more than one. However, there was no mention in the input example in the problem of the rover's ID. So 
     #I chose just two rovers as the input given are for only two rovers.
     
