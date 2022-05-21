@@ -10,7 +10,7 @@ directions_inv = {'0':'E', '90':'N', '180':'W', '270':'S'}
 class MarsRover():
     
     #a list will be used to check the input
-    direction_letters = ['N', 'S', 'W', 'E']
+    direction_letters = ['E', 'N', 'W', 'S']
 
         
         
@@ -64,7 +64,6 @@ class MarsRover():
     
     """For heading forward with no change in the direction"""
     def moving_forward(self):
-
         pos = self.current_position[:]        #defines a list of the input of the rovers current position
         pos[0] = self.current_position[0]     #the x value of the current position 
         pos[1] = self.current_position[1]     #the y value of the y position
@@ -162,17 +161,33 @@ def main():
             break
         except AssertionError:
             print("Only positive integer co ordinates accepted for the upper right corner of the Plateau. Please try again!")
-    #Note about the upper right corner: I was not sure if the upper right corner should be given as an input with every time you give instructions to a rover. 
-    #Or it should be givin only one time at the start of the mission. However, I chose here to make it given everytime the instructions are given, just to be in the safe side.
+            
     
     while True: 
         try:
-            rover = MarsRover(current_position = input("Enter the current position of the rover : \n").split(), instructions = input("Enter the instructions of the rover: \n"), upper_right_corner = upp_right_corner) ## Object of class Rovers
-            rover.checking_the_input() 
-            print("The output is: ", rover.general_movement())
+            rover1 = MarsRover(current_position = input("Enter the current position of the rover 1: \n").split(), instructions = input("Enter the instructions of the rover: \n"), upper_right_corner = upp_right_corner) ## Object of class Rovers
+            rover1.checking_the_input() 
+            print("The output is: ", rover1.general_movement())
+            break
+        except Exception as ex:
+            print(ex)      
+    #Note about the upper right corner: I was not sure if the upper right corner should be given as an input with every time you give instructions to a rover. 
+    #Or it should be givin only one time at the start of the mission. However, I chose here to make it given everytime the instructions are given, just to be in the safe side.
+    
+            
+            
+    while True: 
+        try:
+            rover2 = MarsRover(current_position = input("Enter the current position of the rover 2: \n").split(), instructions = input("Enter the instructions of the rover: \n"), upper_right_corner = upp_right_corner) ## Object of class Rovers
+            rover2.checking_the_input() 
+            print("The final position of rover 2 is: ", rover2.general_movement())
             break
         except Exception as ex:
             print(ex)
+            
+    #Not about the number of rovers: I was thinking to creat a function to ask the user/scientist to add the rover's ID, 
+    #as they are more than one. However, there was no mention in the input example in the problem of the rover's ID. So 
+    #I chose just two rovers as the input given are for only two rovers.
     
 
 if __name__ == "__main__":  
