@@ -25,6 +25,6 @@ The strategy ideas are:
  
  
  **Files**
- The zipped file includes lib folder which contains the main code "calculate.py" to solve the required task, and app.py which runs the application required using flask, and tamplets folder which contains index.html that contains all the instruction to creat the application, and static folder which contains app.js and style.css which are used mainly for, obviously, decorating the app and restricting some input values and formate, and requirment.txt file which contains all the required packages and libraries to run the code, and finaly this README file which have some infromation about the contents of the whole zipped file.
+ The zipped file includes lib folder which contains the main code "calculate.py" to solve the required task, and app.py which runs the application required using flask, and tamplets folder which contains index.html that contains all the instruction to creat the application, and static folder which contains app.js and style.css which are used mainly for, obviously, decorating the app and restricting some input values and formate, and requirment.txt file which contains all the required packages and libraries to run the code, and finaly this README file which have some infromation about the contents of the whole zipped file. There is also an image "Mars_Rover_explain.png" for calirification, if needed.
 
 
